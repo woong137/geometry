@@ -10,5 +10,8 @@ thirdparty/install/**
 .cache/**
 .history/**
 
+# html
+html/**
+
 # Windows
 .DS_Store
