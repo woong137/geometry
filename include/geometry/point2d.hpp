@@ -28,7 +28,7 @@ class Point2D {
    * @param x Double type x coordinate value
    * @param y Double type y coordinate value
    */
-  Point2D(double x, double y);
+  Point2D(double coordinateX, double coordinateY);
 
   /**
    * @brief Copy construct a new Point2D object with other Point2D object
@@ -72,19 +72,16 @@ class Point2D {
    * @param rhs Right hand side Point2D object
    * @return double Euclidean distance between lhs point and rhs point
    */
-  [[nodiscard]] static auto CalculateDistance(const Point2D& lhs,
-                                              const Point2D& rhs) -> double;
-
   /**
    * @brief Set x coordinate value
-   * @param x Double type input x coordinate value
+   * @param coordinateX Double type input x coordinate value
    */
-  void SetX(double x);
+  void SetX(double coordinateX);
   /**
    * @brief Set y coordinate value
-   * @param y Double type input y coordinate value
+   * @param coordinateY Double type input y coordinate value
    */
-  void SetY(double y);
+  void SetY(double coordinateY);
 
   /**
    * @brief Get x coordinate value of this point
