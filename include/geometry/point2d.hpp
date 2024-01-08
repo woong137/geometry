@@ -2,8 +2,8 @@
  * @file geometry/point2d.hpp
  * @author woong137 (woong137137@gmail.com)
  * @brief Point class declaration with 2-dimension
- * @version 1.0.0
- * @date 2023-12-21
+ * @version 1.0.1
+ * @date 2023-01-09
  * @copyright Copyright (c) Programmers, All Rights Reserved.
  */
 
