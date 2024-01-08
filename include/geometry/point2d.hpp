@@ -10,8 +10,8 @@
 // Copyright (c) Programmers, All Rights Reserved.
 // Authors: woong137
 
-#ifndef WOONG137__GEOMETRY__POINT_2D_HPP_
-#define WOONG137__GEOMETRY__POINT_2D_HPP_
+#ifndef PROGRAMMERS__GEOMETRY__POINT_2D_HPP_
+#define PROGRAMMERS__GEOMETRY__POINT_2D_HPP_
 
 namespace programmers::geometry {
 /**
@@ -64,7 +64,7 @@ class Point2D {
    * @param target Other Point2D object to calculate distance
    * @return double Euclidean distance between this point and target point
    */
-  auto CalculateDistance(const Point2D& target) const -> double;
+  [[nodiscard]] auto CalculateDistance(const Point2D& target) const -> double;
 
   /**
    * @brief Calculate distance between lhs point and rhs point
@@ -157,4 +157,4 @@ class Point2D {
 
 }  // namespace programmers::geometry
 
-#endif  // WOONG137__GEOMETRY__POINT_2D_HPP_
+#endif
