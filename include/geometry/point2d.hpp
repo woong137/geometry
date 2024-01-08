@@ -10,8 +10,8 @@
 // Copyright (c) Programmers, All Rights Reserved.
 // Authors: woong137
 
-#ifndef HOLYGROUND__GEOMETRY__POINT_2D_HPP_
-#define HOLYGROUND__GEOMETRY__POINT_2D_HPP_
+#ifndef WOONG137__GEOMETRY__POINT_2D_HPP_
+#define WOONG137__GEOMETRY__POINT_2D_HPP_
 
 namespace programmers::geometry {
 /**
@@ -117,4 +117,4 @@ class Point2D {
 
 }  // namespace programmers::geometry
 
-#endif  // HOLYGROUND__GEOMETRY__POINT_2D_HPP_
+#endif  // WOONG137__GEOMETRY__POINT_2D_HPP_
