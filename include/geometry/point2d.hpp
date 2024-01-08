@@ -97,16 +97,59 @@ class Point2D {
    */
   [[nodiscard]] auto GetY() const -> double;
 
+  /**
+   * @brief Add other point to this point
+   * @param other
+   * @return Point2D Result of addition
+   */
   auto operator+(const Point2D& other) const -> Point2D;
+  /**
+   * @brief Subtract other point from this point
+   * @param other
+   * @return Point2D Result of subtraction
+   */
   auto operator-(const Point2D& other) const -> Point2D;
 
+  /**
+   * @brief Add other point to this point and assign to this point
+   * @param other
+   * @return Point Result of addition and assignment
+   */
   auto operator+=(const Point2D& other) -> Point2D&;
+  /**
+   * @brief Subtract other point from this point and assign to this point
+   * @param other
+   * @return Point Result of subtraction and assignment
+   */
   auto operator-=(const Point2D& other) -> Point2D&;
 
+  /**
+   * @brief Multiply this point with scalar
+   * @param scalar
+   * @return Point2D Result of multiplication
+   */
   auto operator*(double scalar) const -> Point2D;
+  /**
+   * @brief Divide this point with scalar
+   * @param scalar
+   * @return Point2D Result of division
+   */
   auto operator/(double scalar) const -> Point2D;
 
+  /**
+   * @brief check if this point is equal to other point
+   * @param other
+   * @return true if this point is equal to other point
+   * @return false if this point is not equal to other point
+   */
   auto operator==(const Point2D& other) const -> bool;
+
+  /**
+   * @brief check if this point is not equal to other point
+   * @param other
+   * @return true if this point is not equal to other point
+   * @return false if this point is equal to other point
+   */
   auto operator!=(const Point2D& other) const -> bool;
 
  protected:
