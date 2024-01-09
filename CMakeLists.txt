@@ -92,7 +92,6 @@ add_subdirectory(${${PROJECT_NAME}_MODULE_PATH})
 add_subdirectory(${${PROJECT_NAME}_APPLICATION_PATH})
 
 set(${PROJECT_NAME}_SOURCE_FILES
-  src/distance.cpp
   src/point2d.cpp
   # ! Add source files here
 )
