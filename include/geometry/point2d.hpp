@@ -28,7 +28,7 @@ class Point2D {
    * @param x Double type x coordinate value
    * @param y Double type y coordinate value
    */
-  Point2D(double coordinateX, double coordinateY);
+  Point2D(double input_x, double input_y);
 
   /**
    * @brief Copy construct a new Point2D object with other Point2D object
