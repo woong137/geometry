@@ -3,11 +3,11 @@
  * @author woong137 (woong137137@gmail.com)
  * @brief Point class developments with 2-dimension
  * @version 1.0.1
- * @date 2023-01-09
- * @copyright Copyright (c) Programmers, All Rights Reserved.
+ * @date 2024-01-09
+ * @copyright Copyright (c) 2024 Programmers, All Rights Reserved.
  */
 
-// Copyright (c) Programmers, All Rights Reserved.
+// Copyright (c) 2024 Programmers, All Rights Reserved.
 // Authors: woong137
 
 #include "geometry/point2d.hpp"
