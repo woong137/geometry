@@ -169,4 +169,56 @@ TEST(GeometryPoint2D, operatorSubtractAssign) {
     EXPECT_FLOAT_EQ(kSourceY - kTargetY, source.GetY());
   }
 }
+
+TEST(GeometryPoint2D, operatorMultiply) {
+  for (uint32_t i = 0; i < kTestCount; ++i) {
+    const auto kSourceX = static_cast<double>(std::rand());
+    const auto kSourceY = static_cast<double>(std::rand());
+    const auto kScalar = static_cast<double>(std::rand());
+
+    Point2D source(kSourceX, kSourceY);
+
+    Point2D result = source * kScalar;
+
+    EXPECT_FLOAT_EQ(kSourceX * kScalar, result.GetX());
+    EXPECT_FLOAT_EQ(kSourceY * kScalar, result.GetY());
+  }
+}
+
+TEST(GeometryPoint2D, operatorDivide) {
+  for (uint32_t i = 0; i < kTestCount; ++i) {
+    const auto kSourceX = static_cast<double>(std::rand());
+    const auto kSourceY = static_cast<double>(std::rand());
+    const auto kScalar = static_cast<double>(std::rand());
+
+    Point2D source(kSourceX, kSourceY);
+
+    Point2D result = source / kScalar;
+
+    EXPECT_FLOAT_EQ(kSourceX / kScalar, result.GetX());
+    EXPECT_FLOAT_EQ(kSourceY / kScalar, result.GetY());
+  }
+}
+
+TEST(GeometryPoint2D, operatorEqual) {
+  for (uint32_t i = 0; i < kTestCount; ++i) {
+    const auto kSource = static_cast<double>(std::rand());
+
+    Point2D source(kSource, kSource);
+    Point2D target(kSource, kSource);
+
+    EXPECT_TRUE(source == target);
+  }
+}
+
+TEST(GeometryPoint2D, operatorNotEqual) {
+  for (uint32_t i = 0; i < kTestCount; ++i) {
+    const auto kSource = static_cast<double>(std::rand());
+
+    Point2D source(kSource, kSource);
+    Point2D target(kSource, kSource + 1.0);
+
+    EXPECT_TRUE(source != target);
+  }
+}
 }  // namespace programmers::geometry
