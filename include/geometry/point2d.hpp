@@ -72,16 +72,25 @@ class Point2D {
    * @param rhs Right hand side Point2D object
    * @return double Euclidean distance between lhs point and rhs point
    */
+  [[nodiscard]] static auto CalculateDistance(const Point2D& lhs,
+                                              const Point2D& rhs) -> double;
+
+  /**
+   * @brief Calculate distance between lhs point and rhs point
+   * @param lhs Left hand side Point2D object
+   * @param rhs Right hand side Point2D object
+   * @return double Euclidean distance between lhs point and rhs point
+   */
   /**
    * @brief Set x coordinate value
    * @param coordinateX Double type input x coordinate value
    */
-  void SetX(double coordinateX);
+  void SetX(double inpu_x);
   /**
    * @brief Set y coordinate value
    * @param coordinateY Double type input y coordinate value
    */
-  void SetY(double coordinateY);
+  void SetY(double input_y);
 
   /**
    * @brief Get x coordinate value of this point
