@@ -85,7 +85,7 @@ class Point2D {
    * @brief Set x coordinate value
    * @param coordinateX Double type input x coordinate value
    */
-  void SetX(double inpu_x);
+  void SetX(double input_x);
   /**
    * @brief Set y coordinate value
    * @param coordinateY Double type input y coordinate value
