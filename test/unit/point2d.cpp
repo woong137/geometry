@@ -1,4 +1,4 @@
-// Copyright (c) Programmers, All Rights Reserved.
+// Copyright (c) 2024 Programmers, All Rights Reserved.
 // Authors: woong137
 
 #include "geometry/point2d.hpp"
