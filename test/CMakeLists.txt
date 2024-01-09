@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 3.10)
+cmake_minimum_required(VERSION 3.11)
 
 function(build_submodule PACKAGE_PATH)
   message("Start configuration for ${ELEMENT}.")
@@ -6,7 +6,7 @@ function(build_submodule PACKAGE_PATH)
   message("Finish configuration for ${ELEMENT}.")
 endfunction()
 
-message(STATUS "Start configuration for submodules.")
+message(STATUS "Start configuration for tests.")
 
 file(GLOB ELEMENTS "*")
 
@@ -16,4 +16,5 @@ foreach(ELEMENT ${ELEMENTS})
   endif()
 endforeach()
 
-message(STATUS "Finish configuration for submodules.\n")
+message(STATUS "Finish configuration for tests.\n")
+
