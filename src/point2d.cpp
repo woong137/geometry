@@ -49,5 +49,16 @@ auto Point2D::operator-=(const Point2D& other) -> Point2D& {
   y_ -= other.y_;
   return *this;
 }
-
+auto Point2D::operator*(double scalar) const -> Point2D {
+  return {x_ * scalar, y_ * scalar};
+}
+auto Point2D::operator/(double scalar) const -> Point2D {
+  return {x_ / scalar, y_ / scalar};
+}
+auto Point2D::operator==(const Point2D& other) const -> bool {
+  return (x_ == other.x_) && (y_ == other.y_);
+}
+auto Point2D::operator!=(const Point2D& other) const -> bool {
+  return !(*this == other);
+}
 }  // namespace programmers::geometry
