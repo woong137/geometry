@@ -1,5 +1,5 @@
 /**
- * @file geometry/point2d.hpp
+ * @file geometry/point2d.cpp
  * @author woong137 (woong137137@gmail.com)
  * @brief Point class declaration with 2-dimension
  * @version 1.0.1
